@@ -25,15 +25,7 @@
 	<% if (theme.twitter_widget_id){ %>
           <!-- BEGIN TWITTER BLOCK --> 
           <div class="col-md-4 col-sm-6 pre-footer-col">
-
-	  <a data-tweet-limit="1" class="twitter-timeline"
-	  href="https://twitter.com/<%= theme.twitter_username %>"
-	  data-widget-id="<%= theme.twitter_widget_id %>">Tweets by @<%=
-	  theme.twitter_username %></a>
-
-	  <script>!function(d,s,id){var
-	  js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+            suppose to be qq group QR code here.
           </div>
           <!-- END TWITTER BLOCK -->
 	<% } %>
@@ -49,7 +41,9 @@
           <!-- BEGIN COPYRIGHT -->
           <div class="col-md-6 col-sm-6 padding-top-10">
                   &copy; <%= date(new Date(), 'YYYY') %> <%= config.title %><br>
- powered by hexo and corporate | hosting on google firebase
+                  Powered by <a href="https://hexo.io">Hexo</a> | 
+                  Theme <a href="https://github.com/ptsteadman/hexo-theme-corporate">corporate</a> | 
+                  Hosted by <a href="https://firebase.google.com">Firebase</a>
           </div>
           <!-- END COPYRIGHT -->
 	  <%- partial('_partial/social') %>

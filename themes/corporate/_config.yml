@@ -1,8 +1,8 @@
 # Header Menu
 menu:
   Home: /
-  Projects: https://github.com/HFUUOSC
   Blog: /archives/ # can set archive-dir in root config to custom value
+  Projects: https://github.com/HFUUOSC
   # Contact: /contact/
   About: /about/
    
@@ -19,12 +19,9 @@ swiftype_install_key:
 
 # Social
 social:
-  github: https://github.com/ptsteadman
-  twitter: https://twitter.com/ptsteadman
-  facebook: https://www.facebook.com/ptsteadman
-  rss: atom.xml
-  linkedin: https://linkedin.com/in/ptsteadman
-  stackoverflow: http://stackoverflow.com/users/2480493/patrick-steadman
+  github: https://github.com/HFUUOSC
+  qq: test
+  wechat: test
 
 # Miscellaneous
 color_scheme: red   # options: blue, gray, green, orange, red, turquoise
@@ -33,11 +30,11 @@ twitter_widget_id: "678830341331820544" # as a string, from https://twitter.com/
 twitter_username: computerlab_ # twitter username without the @
 default_author: Anonymous
 
-about: HFUUOSC is an open-source community consist of students in Hefei University who love technology and GNU/Linux, it aims to disseminate open-source cultural, build open-source projects and share open-source spirit.
+about: 合肥学院开源社区是由合肥学院在校开源技术爱好者和 GNU/Linux 爱好者组成的开源技术社区，旨在传播开源文化，构建开源项目，分享开源精神。
 qq: 1106651511
 email: syf-98@hotmail.com
-address_1: 锦绣大道 99 号
-address_2: 36#教学楼 605
+address_1: 合肥学院
+address_2: 锦绣大道 99 号
 address_3: 合肥，中国 11249
 skype: ptsteadman
 lat: 40.715911 
