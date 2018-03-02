@@ -1,10 +1,10 @@
 title: 7 个示例科普 CPU cache
-category: Technology
-date: 2018-03-01
+category: Technologies
+date: 2018-03-02
 tags:
 - CPU
 - 计算机组成原理
-thumbnail: https://igoro.com/wordpress/wp-content/uploads/2010/01/image6.png
+thumbnail: https://my.csdn.net/uploads/201204/18/1334757273_8141.png
 lede: "CPU cache 到底是如何工作的？"
 featured: true
 
@@ -60,7 +60,7 @@ for (int i = 0; i < arr.Length; i += K) arr[i] *= 3;
 
 #### 示例3：L1和L2缓存大小
 
-今天的计算机具有两级或三级缓存，通常叫做L1、L2以及可能的L3（译者注：如果你不明白什么叫二级缓存，可以参考[这篇精悍的博文](https://coolshell.cn/articles/3236.html)lol）。如果你想知道不同缓存的大小，你可以使用系统内部工具[CoreInfo](http://technet.microsoft.com/en-us/sysinternals/cc835722.aspx)，或者Windows API调用[GetLogicalProcessorInfo](http://msdn.microsoft.com/en-us/library/ms683194(VS.85).aspx)。两者都将告诉你缓存行以及缓存本身的大小。
+今天的计算机具有两级或三级缓存，通常叫做L1、L2以及可能的L3（译者注：如果你不明白什么叫二级缓存，可以参考[这篇精悍的博文](https://coolshell.cn/articles/3236.html)lol）。如果你想知道不同缓存的大小，你可以使用系统内部工具[CoreInfo](https://technet.microsoft.com/en-us/sysinternals/cc835722.aspx)，或者Windows API调用[GetLogicalProcessorInfo](https://msdn.microsoft.com/en-us/library/ms683194(VS.85).aspx)。两者都将告诉你缓存行以及缓存本身的大小。
 
 在我的机器上，CoreInfo现实我有一个32KB的L1数据缓存，一个32KB的L1指令缓存，还有一个4MB大小L2数据缓存。L1缓存是处理器独享的，L2缓存是成对处理器共享的。
 
@@ -91,7 +91,7 @@ for (int i = 0; i < steps; i++)
 ```
 
 下图是运行时间图表：
-![cache size](http://igoro.com/wordpress/wp-content/uploads/2010/02/image.png)
+![cache size](https://igoro.com/wordpress/wp-content/uploads/2010/02/image.png)
 
 你可以看到在32KB和4MB之后性能明显滑落——正好是我机器上L1和L2缓存大小。
 
@@ -113,9 +113,9 @@ for (int i=0; i<steps; i++) { a[0]++; a[1]++; }
 结果是第二个循环约比第一个快一倍，至少在我测试的机器上。为什么呢？这跟两个循环体内的操作指令依赖性有关。
 
 第一个循环体内，操作做是相互依赖的（译者注：下一次依赖于前一次）：
-![same value dependency](http://igoro.com/wordpress/wp-content/uploads/2010/01/image.png)
+![same value dependency](https://igoro.com/wordpress/wp-content/uploads/2010/01/image.png)
 但第二个例子中，依赖性就不同了：
-![different values dependency](http://igoro.com/wordpress/wp-content/uploads/2010/02/image2.png)
+![different values dependency](https://igoro.com/wordpress/wp-content/uploads/2010/02/image2.png)
 
 现代处理器中对不同部分指令拥有一点并发性（译者注：跟流水线有关，比如Pentium处理器就有U/V两条流水线，后面说明）。这使得CPU在同一时刻访问L1两处内存位置，或者执行两次简单算术操作。在第一个循环中，处理器无法发掘这种指令级别的并发性，但第二个循环中就可以。
 
@@ -136,7 +136,7 @@ for (int i=0; i<steps; i++) { a[0]++; a[1]++; }
 
 直接映射缓存会引发冲突——当多个值竞争同一个缓存槽，它们将相互驱逐对方，导致命中率暴跌。另一方面，完全关联缓存过于复杂，并且硬件实现上昂贵。N路组关联是处理器缓存的典型方案，它在电路实现简化和高命中率之间取得了良好的折中。
 
-![完全关联与多路关联的cache映射](http://my.csdn.net/uploads/201204/18/1334757273_8141.png)
+![完全关联与多路关联的cache映射](https://my.csdn.net/uploads/201204/18/1334757273_8141.png)
 （此图由译者给出，直接映射和完全关联可以看做N路组关联的两个极端，从图中可知当N=1时，即直接映射；当N取最大值时，即完全关联。读者可以自行想象直接映射图例，具体表述见参考资料。）
 
 举个例子，4MB大小的L2缓存在我机器上是16路关联。所有64字节内存块将分割为不同组，映射到同一组的内存块将竞争L2缓存里的16路槽位。
@@ -165,7 +165,7 @@ public static long UpdateEveryKthByte(byte[] arr, int K)
 该方法每次在数组中迭代K个值，当到达末尾时从头开始。循环在运行足够长（2^20次）之后停止。
 
 我使用不同的数组大小（每次增加1MB）和不同的步长传入UpdateEveryKthByte()。以下是绘制的图表，蓝色代表运行较长时间，白色代表较短时间：
-![timing](http://igoro.com/wordpress/wp-content/uploads/2010/02/image_thumb1_opt.png)
+![timing](https://igoro.com/wordpress/wp-content/uploads/2010/02/image_thumb1_opt.png)
 蓝色区域（较长时间）表明当我们重复数组迭代时，更新的值无法同时放在缓存中。浅蓝色区域对应80毫秒，白色区域对应10毫秒。
 
 让我们来解释一下图表中蓝色部分：
@@ -195,7 +195,7 @@ public static long UpdateEveryKthByte(byte[] arr, int K)
 在相同循环次数下的所有测试用例中，采取省力步长的运行时间来得短。
 
 将图表延伸后的模型：
-![timing2](http://igoro.com/wordpress/wp-content/uploads/2010/02/assoc_big_thumb1_opt.png)
+![timing2](https://igoro.com/wordpress/wp-content/uploads/2010/02/assoc_big_thumb1_opt.png)
 
 缓存关联性理解起来有趣而且确能被证实，但对于本文探讨的其它问题比起来，它肯定不会是你编程时所首先需要考虑的问题。
 
@@ -284,10 +284,10 @@ CPU指令通常被分为四类，第一类是常用的简单指令，像mov, nop
 
 #### 参考资料
 
-wiki上的CPU cache解析（[中文版](http://zh.wikipedia.org/zh-cn/CPU%E7%BC%93%E5%AD%98)）（[英文版](https://en.wikipedia.org/wiki/CPU_cache)）。
+wiki上的CPU cache解析（[中文版](https://zh.wikipedia.org/zh-cn/CPU%E7%BC%93%E5%AD%98)）（[英文版](https://en.wikipedia.org/wiki/CPU_cache)）。
 
-上海交通大学师生制作的一个关于[cache映射功能、命中率计算](http://yoursunny.com/study/EI209/?topic=cache)的教学演示程序，模拟了不同关联模式下cache的映射和命中几率，形象直观。
+上海交通大学师生制作的一个关于[cache映射功能、命中率计算](https://yoursunny.com/study/EI209/?topic=cache)的教学演示程序，模拟了不同关联模式下cache的映射和命中几率，形象直观。
 
-网易数据库大牛[@何_登成](http://weibo.com/u/2216172320)自制PPT[《CPU Cache and Memory Ordering》](http://vdisk.weibo.com/s/dBzv2sibdUB8)，信息量超大！
+网易数据库大牛[@何_登成](https://weibo.com/u/2216172320)自制PPT[《CPU Cache and Memory Ordering》](http://vdisk.weibo.com/s/dBzv2sibdUB8)，信息量超大！
 
-南京大学计算机教学[公开PPT](http://cs.nju.edu.cn/swang/CompArchOrg_12F/slides/lecture09.pdf)，温馨提示，地址域名里面改变字段”lecture”后面的数字编号可切换课程;-)
+南京大学计算机教学[公开PPT](https://cs.nju.edu.cn/swang/CompArchOrg_12F/slides/lecture09.pdf)，温馨提示，地址域名里面改变字段”lecture”后面的数字编号可切换课程;-)
