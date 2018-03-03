@@ -12,7 +12,7 @@ featured: true
 
 CPU cache一直是理解计算机体系架构的重要知识点，也是并发编程设计中的技术难点，而且相关参考资料如同过江之鲫，浩瀚繁星，阅之如临深渊，味同嚼蜡，三言两语难以入门。正好网上有人推荐了微软大牛Igor Ostrovsky一篇博文**《漫游处理器缓存效应》**，文章不仅仅用7个最简单的源码示例就将CPU cache的原理娓娓道来，还附加图表量化分析做数学上的佐证，个人感觉这种案例教学的切入方式绝对是俺的菜，故而忍不住贸然译之，以飨列位看官。
 
-原文地址：[Gallery of Processor Cache Effects](http://igoro.com/archive/gallery-of-processor-cache-effects/)
+原文地址：[Gallery of Processor Cache Effects](https://igoro.com/archive/gallery-of-processor-cache-effects/)
 
 大多数读者都知道cache是一种快速小型的内存，用以存储最近访问内存位置。这种描述合理而准确，但是更多地了解一些处理器缓存工作中的“烦人”细节对于理解程序运行性能有很大帮助。
 
@@ -288,6 +288,6 @@ wiki上的CPU cache解析（[中文版](https://zh.wikipedia.org/zh-cn/CPU%E7%BC
 
 上海交通大学师生制作的一个关于[cache映射功能、命中率计算](https://yoursunny.com/study/EI209/?topic=cache)的教学演示程序，模拟了不同关联模式下cache的映射和命中几率，形象直观。
 
-网易数据库大牛[@何_登成](https://weibo.com/u/2216172320)自制PPT[《CPU Cache and Memory Ordering》](http://vdisk.weibo.com/s/dBzv2sibdUB8)，信息量超大！
+网易数据库大牛[@何_登成](https://weibo.com/u/2216172320)自制PPT[《CPU Cache and Memory Ordering》](https://vdisk.weibo.com/s/dBzv2sibdUB8)，信息量超大！
 
 南京大学计算机教学[公开PPT](https://cs.nju.edu.cn/swang/CompArchOrg_12F/slides/lecture09.pdf)，温馨提示，地址域名里面改变字段”lecture”后面的数字编号可切换课程;-)

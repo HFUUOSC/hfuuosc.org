@@ -221,7 +221,7 @@ phpinfo();
 现在，你可以通过域名或 IP 来访问你的网页了：
 
 ```
-http://服务器域名或IP/info.php
+https://服务器域名或IP/info.php
 ```
 
 你应该能看见一个由 PHP 生成的服务器信息页面：

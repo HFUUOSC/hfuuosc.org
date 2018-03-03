@@ -20,7 +20,7 @@ GitHub 也为个人项目提供了必要的工具，使得个人项目可以轻�
 
 在 GitHub 上启动新项目时，您必须先使用您的电子邮件地址创建一个帐户。
 
-[![github homepage](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054322r2ped9pevvkkpjyu.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/github-homepage_orig.jpg)
+[![github homepage](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054322r2ped9pevvkkpjyu.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/github-homepage_orig.jpg)
 
 然后，在验证邮箱的时候，用户将自动登录到他们的 GitHub 帐户。
 
@@ -32,7 +32,7 @@ GitHub 也为个人项目提供了必要的工具，使得个人项目可以轻�
 - 选中 “以一个 README 文件初始化Initialize this repository with a README”。
 - 最后，点击底部的 “创建仓库Create Repository” 按钮。
 
-[![create a github repository](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054323d6eigiy6ffai6g0w.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/create-a-github-repository_orig.jpg)
+[![create a github repository](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054323d6eigiy6ffai6g0w.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/create-a-github-repository_orig.jpg)
 
 #### 2、 添加分支
 
@@ -40,7 +40,7 @@ GitHub 也为个人项目提供了必要的工具，使得个人项目可以轻�
 
 为了使项目适合每一个人的需求，通常情况下，总是需要添加几个格外的分支来匹配不同的项目。在主分支上创建一个分支和复制主分支时的当前状态是一样的。
 
-[![add a branch to github repository](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054323bwmwtptxa8smtisu.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/add-a-branch-to-github-repository_orig.jpg)
+[![add a branch to github repository](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054323bwmwtptxa8smtisu.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/add-a-branch-to-github-repository_orig.jpg)
 
 创建分支与在不同版本中保存单个文件是类似的。它通过在特定仓库上执行的任务重命名来实现。
 
@@ -62,14 +62,14 @@ GitHub 也为个人项目提供了必要的工具，使得个人项目可以轻�
 要对仓库进行更改和提交更改，请执行以下步骤：
 
 - 点击仓库名称 “Hello-World”。
-- 点击右上角的铅笔图标查看和编辑文件。 [![commit changes to github repository](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054324dkbe3epvtk3hg9ve.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/commit-changes-to-github-repository_orig.jpg)
+- 点击右上角的铅笔图标查看和编辑文件。 [![commit changes to github repository](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054324dkbe3epvtk3hg9ve.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/commit-changes-to-github-repository_orig.jpg)
 - 在编辑器中，写一些东西来确定你可以进行更改。
 - 在提交消息commit message字段中做简要的总结，以解释为什么以及如何进行更改。
 - 点击提交更改commit changes按钮保存更改。
 
 请注意，这些更改仅仅影响到 readme-edits 分支，而不影响主分支。
 
-[![commit branch to master](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054325dkj2ngmpc0lnn2cm.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/commit-branch-to-master_orig.jpg)
+[![commit branch to master](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054325dkj2ngmpc0lnn2cm.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/commit-branch-to-master_orig.jpg)
 
 #### 4、 开启一个拉取请求
 
@@ -77,11 +77,11 @@ GitHub 也为个人项目提供了必要的工具，使得个人项目可以轻�
 
 开启一个拉取请求：
 
-- 点击拉取请求pull requests选项卡。 [![github pull request](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054326lka46l74acs44acz.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/github-pull-request_orig.jpg)
+- 点击拉取请求pull requests选项卡。 [![github pull request](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054326lka46l74acs44acz.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/github-pull-request_orig.jpg)
 - 点击新建拉取请求new pull requests按钮。
-- 选择 readme-edits 分支与 master 分支进行比较。 [![compare commit changes github](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054327mctb3tz34fca18a1.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/compare-commit-changes-github_orig.jpg)
+- 选择 readme-edits 分支与 master 分支进行比较。 [![compare commit changes github](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054327mctb3tz34fca18a1.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/compare-commit-changes-github_orig.jpg)
 - 确定请求，并确定这是您要提交的内容。
-- 点击创建拉取请求绿色按钮并输入一个标题。 [![open a pull request in github repository](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054327n7zv93009wkqzvv2.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/open-a-pull-request-in-github-repository_orig.jpg)
+- 点击创建拉取请求绿色按钮并输入一个标题。 [![open a pull request in github repository](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054327n7zv93009wkqzvv2.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/open-a-pull-request-in-github-repository_orig.jpg)
 - 按下回车键。
 
 用户可以通过尝试创建并保存拉取请求来证实这些操作。
@@ -90,7 +90,7 @@ GitHub 也为个人项目提供了必要的工具，使得个人项目可以轻�
 
 最后一步是将 readme-edits 分支和 master 分支合并到一起。如果 readme-edits 分支和 master 分支不会产生冲突，则会显示merge pull request合并拉取请求的按钮。
 
-[![merge the pull request github](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054328skefh6288kb8et8h.jpg)](http://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/merge-the-pull-request-github_orig.jpg)
+[![merge the pull request github](https://dn-linuxcn.qbox.me/data/attachment/album/201708/28/054328skefh6288kb8et8h.jpg)](https://www.linuxandubuntu.com/uploads/2/1/1/5/21152474/merge-the-pull-request-github_orig.jpg)
 
 当合并拉取时，有必要确保评论comment和其他字段被正确填写。合并拉取：
 
@@ -102,8 +102,8 @@ GitHub 也为个人项目提供了必要的工具，使得个人项目可以轻�
 
 ------
 
-via: <http://www.linuxandubuntu.com/home/getting-started-with-github>
+via: <https://www.linuxandubuntu.com/home/getting-started-with-github>
 
-作者：[LinuxAndUbuntu](http://www.linuxandubuntu.com/) 译者：[firmianay](https://github.com/firmianay) 校对：[wxy](https://github.com/wxy)
+作者：[LinuxAndUbuntu](https://www.linuxandubuntu.com/) 译者：[firmianay](https://github.com/firmianay) 校对：[wxy](https://github.com/wxy)
 
 本文由 [LCTT](https://github.com/LCTT/TranslateProject) 原创编译，[Linux中国](https://linux.cn/) 荣誉推出
