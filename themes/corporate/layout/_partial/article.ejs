@@ -51,6 +51,21 @@
 <br>
 <% } %>
 
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  owner: 'HFUUOSC',
+  repo: 'hfuuosc.org',
+  oauth: {
+    client_id: 'cc09c3cac4a13e251dd2',
+    client_secret: '34f8a7f71108889ef7490aa01be75021c8a17083',
+  },
+})
+gitment.render('container')
+</script>
+
 </div>
 <div class="col-md-3 col-sm-3 blog-sidebar">
   <%- partial('sidebar') %>
