@@ -1,0 +1,155 @@
+# 蓝桥杯省赛攻略
+
+制作者：PearFL
+联系QQ：451159561（如果发现文章中有不正确的地方，欢迎联系本人，感谢指出问题的每个人）
+
+PS：本文一切代码均有C/C++编写，参与JAVA组的人可以理解思想了以后尝试改写
+
+
+
+### 特别提醒
+
+1、注意程序最后应有返回值，且返回值为0
+
+2、万能头文件可以使用(bits/stdc++.h)，比赛中使用c++的方法是，记得开全局空间using namespace std;
+
+3、熟悉STL用法，包括vector、set、map、pair等结构的用法，这会给你剩下许多时间
+
+4、例如max_element、lower_bound函数的用法请熟悉
+
+5、在不能保证自己的算法的绝对正确性的情况下，可以选择保住现有的分，而不去尝试难度较高且自己没有把握的方法
+
+
+
+### 1、最小公倍数gcd
+
+```c++
+int gcd(int a,int b){
+	return b == 0 ? a : gcd(b,a%b);
+} 
+```
+
+
+
+### 2、最大公约数lcm
+
+```c++
+int gcd(int a,int b){
+	return b == 0 ? a : gcd(b,a%b);
+} 
+
+int lcm(int a,int b){
+	return a*b/gcd(a,b);
+}
+```
+
+
+
+### 3、Fibonacci数列 
+
+采用记忆化搜索的写法，或者使用状态转移的方法推导
+
+- 记忆化搜索写法
+
+```c++
+int dp[1005];
+int dfs(int n){
+	if(n==1 || n==2){
+		return 1;
+	}
+	if(dp[n] > 0){
+		return dp[n];
+	}else{
+		dp[n] = dfs(n-1) + dfs(n-2);
+		return dp[n];
+	}	
+}
+
+```
+
+
+- 状态转移写法
+
+```c++
+int dp[1000];
+dp[1] = 1;
+dp[2] = 1;
+for(int i=3;i<1000;i++){
+  dp[i] = dp[i-1] + dp[i-2];
+} 
+```
+
+
+
+### 4、memset初始化
+
+- memset在整形数组中推荐两种用法
+
+```c++
+int dp[1005];
+memset(dp,0,sizeof(dp));//dp中的值全部置为了0
+memset(dp,-1,sizeof(dp));//dp中的值全部置为了-1
+```
+
+ 有人问1,2,3其他的可行，当然是不行的，至于原因有兴趣想要知道的话，可以在网上了解
+
+- memset在char数组中
+```c++
+char str[1005];
+memset(str,0,sizeof(str));
+```
+这样就是将char数组重置了，在多组输入的情况中，memset将会是一个非常高效的方法
+
+
+
+### 5、fill初始化
+
+```c++
+int dp[100];
+fill(dp,dp+10,5);
+```
+
+此时dp[0] -> dp[9]的值全部被置为了5
+
+```c++
+char str[100];
+fill(str,str+10,'m');
+```
+
+此时str[0] -> str[9]的值全部被置为了m
+
+
+
+以上两个例子相信大家一下子就对fill有所了解了吧，在实际运用中大家可以根据自己的需要使用fill和memset
+
+
+
+### 6、ctype.h头文件
+
+|   函数名称   |         函数原型         |                  函数功能                   |            函数返回            |
+| :------: | :------------------: | :-------------------------------------: | :------------------------: |
+| isalpha  | int isalpha(char ch) |                检查ch是否是字母                | 是字母返回非0（在vs2015中为2），否则返回 0 |
+| iscntrl  | int iscntrl(int ch)  |  检查ch是否控制字符(其ASCII码在0和0x1F之间,数值为 0-31)  |        是返回非0,否则返回 0        |
+| isdigit  | int isdigit(char ch) |             检查ch是否是数字(0-9)              |        是返回非0,否则返回0         |
+| isgraph  | int isgraph(int ch)  | 检查ch是否可显示字符(其ASCII码在0x21到0x7E之间),不包括空格  |        是返回非0,否则返回0         |
+| islower  | int islower(int ch)  |             检查ch是否小写字母(a-z)             |        是返回非0,否则返回0         |
+| isupper  | int isupper(int ch)  |            检查ch是否是大写字母(A-Z)             |        是返回非0,否则返回0         |
+| tolower  | int tolower(int ch)  |              将ch字符转换为小写字母               |      返回ch所代表的字符的小写字母       |
+| toupper  | int toupper(int ch)  |              将ch字符转换成大写字母               |         与ch相应的大写字母         |
+| isalnum  | int isalnum(int ch)  |              检查ch是否是字母或数字               |      是字母或数字返回非0,否则返回0      |
+| isprint  | int isprint(int ch)  | 检查ch是否是可打印字符(包括空格),其ASCII码在0x20到0x7E之间  |        是返回非0,否则返回0         |
+| ispunct  | int ispunct(int ch)  | 检查ch是否是标点字符(不包括空格),即除字母,数字和空格以外的所有可打印字符 |        是返回非0,否则返回0         |
+| isspace  | int isspace(int ch)  |        检查ch是否是空格符和跳格符(控制字符)或换行符         |        是返回非0,否则返回0         |
+| isxdigit | int isxdigit(int ch) |    检查ch是否是一个16进制数学字符(即0-9,或A-F,或a-f)    |        是返回非0,否则返回0         |
+| isascii  | int isascii(int ch)  |           测试参数是否是ASCII码0-127            |        是返回非0,否则返回0         |
+
+
+
+### 7、素数系列问题
+
+http://blog.csdn.net/laichilizi/article/details/78575586
+
+
+
+### 8、DFS系列问题
+
