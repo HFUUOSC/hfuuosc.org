@@ -36,5 +36,5 @@ Linux Install Party
 
 * [VirtualBox 虚拟机](https://download.virtualbox.org/virtualbox/5.2.8/VirtualBox-5.2.8-121009-Win.exe)（下载后安装）
 * Ubuntu 16.04.4 LTS  
-  [32位](https://mirrors.ustc.edu.cn/ubuntu-releases/releases/16.04.4/ubuntu-16.04.4-desktop-amd64.iso) 或 [64位](https://mirrors.ustc.edu.cn/ubuntu-releases/releases/16.04.4/ubuntu-16.04.4-desktop-i386.iso)，选择其一下载  
+  [32位](https://mirrors.163.com/ubuntu-releases/16.04.4/ubuntu-16.04.4-desktop-i386.iso) 或 [64位](https://mirrors.163.com/ubuntu-releases/16.04.4/ubuntu-16.04.4-desktop-amd64.iso)，选择其一下载  
   注：这里选择 Ubuntu 发行版，因为 Ubuntu 有完善的社区支持，新手友好且安装方便。同样可以选择 CentOS、Debian 等发行版，它们都是 Linux 内核的操作系统。
