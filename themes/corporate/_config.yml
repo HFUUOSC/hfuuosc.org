@@ -4,7 +4,7 @@ menu:
   # Blog: /archives/ # can set archive-dir in root config to custom value
   Technologies: /categories/Technologies
   Activities: /categories/Activities
-  Projects: https://github.com/HFUUOSC
+  # Projects: https://github.com/HFUUOSC
   # Contact: /contact/
   About: /about/
    
