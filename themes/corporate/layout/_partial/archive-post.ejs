@@ -16,7 +16,7 @@
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY/MM/DD'}) %>
       </li>
       <li><i class="fa fa-comments"></i>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
+        <%- post.author %>
       </li>
       <li>
 	<i class="fa fa-tags"></i>
