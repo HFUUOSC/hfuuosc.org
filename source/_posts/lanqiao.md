@@ -10,7 +10,7 @@ tags:
 - 蓝桥杯
 - 算法
 
-thumbnail: https://hfuuosc-1253392534.cos.ap-shanghai.myqcloud.com/static/thumbnail.png?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDtgHgw5xKOICyXuu2nNlcJo8MOOFuko7E%26q-sign-time%3D1521699644%3B1521703244%26q-key-time%3D1521699644%3B1521703244%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3Df2a6e6acb44f81d8a9a3d195f39ae217abd0807f
+thumbnail: https://hfuuosc-1253392534.file.myqcloud.com/static/thumbnail.png?sign=/gkXg4ZWtL6Z2MZ05Pcw4AxuJ7JhPTEyNTMzOTI1MzQmaz1BS0lEdGdIZ3c1eEtPSUN5WHV1Mm5ObGNKbzhNT09GdWtvN0UmZT0xNTI0MzA2NzIwJnQ9MTUyMTcxNDcyMCZyPTE0ODA1MTY0NTMmZj0vc3RhdGljL3RodW1ibmFpbC5wbmcmYj1oZnV1b3Nj
 lede: "开源社区第一次技术分享活动将于本周六（3月24日）举行，时间为下午3点～4点半，教室暂定为36栋210。\n
 本次主题为“蓝桥杯省赛冲刺”，欢迎报考蓝桥杯的童鞋来听马大佬的算法讲堂~"
 
