@@ -77,4 +77,6 @@ theme: corporate
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://git.coding.net/heart4lor/hfuuosc.org.git
+  branch: master
