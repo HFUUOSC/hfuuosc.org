@@ -12,7 +12,7 @@ tags:
 
 thumbnail: https://hfuuosc-1253392534.file.myqcloud.com/activities/1_LinuxInstallParty/9.jpg?sign=6ZCJ1F0rQXpaONzL6KkUO8ibrs1hPTEyNTMzOTI1MzQmaz1BS0lEdGdIZ3c1eEtPSUN5WHV1Mm5ObGNKbzhNT09GdWtvN0UmZT0xNTI0MzA2MTk0JnQ9MTUyMTcxNDE5NCZyPTEwOTcyOTQ0NzQmZj0vYWN0aXZpdGllcy8xX0xpbnV4SW5zdGFsbFBhcnR5LzkuanBnJmI9aGZ1dW9zYw==
 
-lede: "开源社区第一次技术分享活动已于 3 月 18 日举行，时间为下午 3 点～4 点半，教室为 36 栋 210。本次主题为“Linux Install Party”，活动主要分为两个部分：Linux 介绍和 Linux 安装。"
+lede: "开源社区第一次技术分享活动已于 3 月 18 日举行，时间为下午 3 点～4 点半，教室为 36 栋 210。<br>本次主题为“Linux Install Party”，活动主要分为两个部分：Linux 介绍和 Linux 安装。"
 
 ---
 
@@ -57,3 +57,5 @@ https://www.hfuuosc.org/slides/1.html
 
 
 如果你想分享技术，或者有什么想法，欢迎扫描网站右下角的二维码，或直接搜索群号：698892157 加入群组讨论。
+
+---
